@@ -1,0 +1,4 @@
+repository "3DSurvivalGame 2025-10-08_00-13-24/3DSurvivalGame@20067513987420@cloud"
+  path "/"
+    br "/main"
+    co "/main"
