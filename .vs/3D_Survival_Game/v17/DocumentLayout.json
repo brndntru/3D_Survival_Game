@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\firstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\firstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\MovementController.cs",
+              "RelativeDocumentMoniker": "Assets\\MovementController.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\MovementController.cs",
+              "RelativeToolTip": "Assets\\MovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T03:05:28.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FirstPerson.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\FirstPerson.cs",
+              "RelativeDocumentMoniker": "Assets\\FirstPerson.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\FirstPerson.cs",
+              "RelativeToolTip": "Assets\\FirstPerson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:59:31.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
