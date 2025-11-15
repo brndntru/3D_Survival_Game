@@ -3,11 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\playervitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\playervitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\camerashake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\inventorypop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\inventorypop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\handcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\handcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\handsway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\handsway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\hotbarselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\hotbarselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\playerpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\playerpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\slotclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\slotclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\freezefxui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\freezefxui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|c:\\users\\hankc\\documents\\3d_survival_game\\assets\\firstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\coldzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\coldzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\warmzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\warmzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\vitalsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\vitalsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|C:\\Users\\hankc\\Documents\\3D_Survival_Game\\assets\\firstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91FAB507-9822-946F-A26F-5612186E3317}|Assembly-CSharp.csproj|solutionrelative:assets\\firstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,24 +90,241 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraShake.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\CameraShake.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraShake.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\CameraShake.cs",
+              "RelativeToolTip": "Assets\\CameraShake.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T06:07:32.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HotbarSelection.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HotbarSelection.cs",
+              "RelativeDocumentMoniker": "Assets\\HotbarSelection.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HotbarSelection.cs",
+              "RelativeToolTip": "Assets\\HotbarSelection.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwCsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:31:07.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SlotClick.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\SlotClick.cs",
+              "RelativeDocumentMoniker": "Assets\\SlotClick.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\SlotClick.cs",
+              "RelativeToolTip": "Assets\\SlotClick.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:01:07.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HotbarController.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HotbarController.cs",
+              "RelativeDocumentMoniker": "Assets\\HotbarController.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HotbarController.cs",
+              "RelativeToolTip": "Assets\\HotbarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:59:10.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\InventoryUI.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\InventoryUI.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:23:38.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventorySlotUI.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventorySlotUI.cs",
+              "RelativeDocumentMoniker": "Assets\\InventorySlotUI.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventorySlotUI.cs",
+              "RelativeToolTip": "Assets\\InventorySlotUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:05:50.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerPickup.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\PlayerPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerPickup.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\PlayerPickup.cs",
+              "RelativeToolTip": "Assets\\PlayerPickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:52:51.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WorldItem.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\WorldItem.cs",
+              "RelativeDocumentMoniker": "Assets\\WorldItem.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\WorldItem.cs",
+              "RelativeToolTip": "Assets\\WorldItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:35:35.336Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerVitals.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\PlayerVitals.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerVitals.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\PlayerVitals.cs",
+              "RelativeToolTip": "Assets\\PlayerVitals.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAqwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:10:57.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HandController.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HandController.cs",
+              "RelativeDocumentMoniker": "Assets\\HandController.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HandController.cs",
+              "RelativeToolTip": "Assets\\HandController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:33:18.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\ItemData.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\ItemData.cs",
+              "RelativeToolTip": "Assets\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:14:28.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryPop.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventoryPop.cs",
+              "RelativeDocumentMoniker": "Assets\\InventoryPop.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\InventoryPop.cs",
+              "RelativeToolTip": "Assets\\InventoryPop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T05:49:11.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HandSway.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HandSway.cs",
+              "RelativeDocumentMoniker": "Assets\\HandSway.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\HandSway.cs",
+              "RelativeToolTip": "Assets\\HandSway.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAqwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:58:10.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Inventory.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Inventory.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwCsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:13:53.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VitalsUI.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\VitalsUI.cs",
+              "RelativeDocumentMoniker": "Assets\\VitalsUI.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\VitalsUI.cs",
+              "RelativeToolTip": "Assets\\VitalsUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:04:55.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FreezeFXUI.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\FreezeFXUI.cs",
+              "RelativeDocumentMoniker": "Assets\\FreezeFXUI.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\FreezeFXUI.cs",
+              "RelativeToolTip": "Assets\\FreezeFXUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:46:46.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WarmZone.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\WarmZone.cs",
+              "RelativeDocumentMoniker": "Assets\\WarmZone.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\WarmZone.cs",
+              "RelativeToolTip": "Assets\\WarmZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:14:10.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ColdZone.cs",
+              "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\ColdZone.cs",
+              "RelativeDocumentMoniker": "Assets\\ColdZone.cs",
+              "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\ColdZone.cs",
+              "RelativeToolTip": "Assets\\ColdZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:13:26.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "MovementController.cs",
               "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\MovementController.cs",
               "RelativeDocumentMoniker": "Assets\\MovementController.cs",
               "ToolTip": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\MovementController.cs",
               "RelativeToolTip": "Assets\\MovementController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T03:05:28.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T03:05:28.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "FirstPerson.cs",
               "DocumentMoniker": "C:\\Users\\hankc\\Documents\\3D_Survival_Game\\Assets\\FirstPerson.cs",
               "RelativeDocumentMoniker": "Assets\\FirstPerson.cs",
@@ -43,8 +332,7 @@
               "RelativeToolTip": "Assets\\FirstPerson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T02:59:31.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T02:59:31.134Z"
             }
           ]
         }
