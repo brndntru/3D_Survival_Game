@@ -36,3 +36,6 @@ If cloning git repository:
   3. Open the project (project built with Unity 2022.3.50f1)
   4. Play in edtor
 
+## Video Demo
+
+YouTube Link: https://youtu.be/jYTMfpeL_uE
