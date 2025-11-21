@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Wooden House In The Snow/Demo.unity
+    guid: d6db873b1a5ce5642a9728b4629ec851
   m_configObjects: {}

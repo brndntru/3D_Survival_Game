@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour
 {
-    public int size = 16;
+    public int size = 8;
     public List<InventorySlot> slots = new List<InventorySlot>();
     public System.Action OnInventoryChanged;
 

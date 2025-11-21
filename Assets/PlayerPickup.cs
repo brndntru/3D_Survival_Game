@@ -30,7 +30,7 @@ public class PlayerPickup : MonoBehaviour
         var target = FindTarget();
 
         if (promptText)
-            promptText.text = target ? $"Press {pickupKey} to pick up {target.item.displayName}" : "";
+            promptText.text = target ? $"{pickupKey} to pick up {target.item.displayName}" : "";
 
         if (target && Input.GetKeyDown(pickupKey))
         {
