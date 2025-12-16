@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     // ---- NEW: damage indicator integration ----
     public DamageIndicator damageIndicatorPrefab;
     public Transform indicatorAnchor;   // optional; can leave empty
-    public Vector3 indicatorOffset = new Vector3(0.7f, 1.5f, 0f);
+    public Vector3 indicatorOffset = new Vector3(0.3f, 0.5f, 0f);
 
     void Start()
     {
@@ -46,13 +46,12 @@ public class EnemyHealth : MonoBehaviour
                 ? indicatorAnchor.position
                 : transform.position;
 
-            // Apply local-space offset (right + up)
-            Vector3 worldOffset = transform.TransformVector(indicatorOffset);
-
-            Vector3 pos = basePos + worldOffset;
+            // Treat indicatorOffset as a simple world-space offset
+            Vector3 pos = basePos + indicatorOffset;
 
             var popup = Instantiate(damageIndicatorPrefab, pos, Quaternion.identity);
             popup.Init(amount);
+
         }
 
 
@@ -66,6 +65,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        if (dead) return;
         dead = true;
 
         if (deathEffect)
@@ -73,6 +73,17 @@ public class EnemyHealth : MonoBehaviour
 
         onHealthChanged?.Invoke();
 
-        Destroy(gameObject);
+        Animator anim = GetComponentInChildren<Animator>();
+        if (anim != null)
+        {
+            anim.SetTrigger("Die");
+            // wait for the death animation to play before removing the object
+            Destroy(gameObject, 2f); // adjust 2f to your death clip length
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+
 }
