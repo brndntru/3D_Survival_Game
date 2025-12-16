@@ -1,7 +1,7 @@
 # The Whiteout
-CS 4700 Final Project
-3D Survival Game
-Hank Cao, Brandon Trieu
+CS 4700 Final Project<br>
+Genre: 3D Survival Game<br>
+Creators: Hank Cao, Brandon Trieu
 
 ## Setup
 1) Download zip or clone repository -> Play in Unity editor
@@ -16,5 +16,5 @@ Hank Cao, Brandon Trieu
 - Freeze System: Gradually increasing freeze bar, firepit with warm zone, health damage upon reaching full freeze, GUI freeze indicator
 
 ## Demo
-YouTube Video: https://youtu.be/fSk-kdF7jqg
+YouTube Video: https://youtu.be/fSk-kdF7jqg<br>
 Slideshow: https://docs.google.com/presentation/d/1H8HdGFfHHipstOqtEyLHzVu-of4udv91CjsQUUJ7gKc/edit?usp=sharing
