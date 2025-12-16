@@ -8,7 +8,7 @@ public class MovementController : MonoBehaviour
     public float sprintSpeed = 7f;
 
     [Header("Jump & Gravity")]
-    public float gravity = -20f;       // stronger than -9.81 for snappier feel
+    public float gravity = -20f;      
     public float jumpHeight = 1.2f;    // meters
     public float jumpCooldown = 0.5f;  // seconds
 
@@ -25,15 +25,13 @@ public class MovementController : MonoBehaviour
     {
         bool grounded = cc.isGrounded;
 
-        // keep grounded reliably
         if (grounded && verticalVelocity < 0f)
             verticalVelocity = -2f;
 
-        // input (old Input Manager)
-        float x = Input.GetAxisRaw("Horizontal"); // A/D or Left/Right
-        float z = Input.GetAxisRaw("Vertical");   // W/S or Up/Down
+        float x = Input.GetAxisRaw("Horizontal"); 
+        float z = Input.GetAxisRaw("Vertical");  
 
-        // move relative to where the Player is facing (FirstPersonLook rotates the Player)
+        // move relative to where the Player is facing 
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
         float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed;
         cc.Move(move * speed * Time.deltaTime);
@@ -41,7 +39,7 @@ public class MovementController : MonoBehaviour
         // jump with cooldown
         if (grounded && Input.GetKeyDown(KeyCode.Space) && Time.time >= lastJumpTime + jumpCooldown)
         {
-            verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity); // v = ?(2gh)
+            verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity); 
             lastJumpTime = Time.time;
         }
 

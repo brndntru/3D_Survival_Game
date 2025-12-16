@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class FreezeFXUI : MonoBehaviour
 {
-    public PlayerVitals vitals;     // your PlayerVitals
-    public Image overlay;           // the FrostOverlay Image
+    public PlayerVitals vitals;   
+    public Image overlay;           // frostoverlay image
     [Range(0f, 1f)] public float maxAlpha = 0.75f;
     public AnimationCurve alphaByFreeze = AnimationCurve.EaseInOut(0, 0, 1, 1);
     public Color coldTint = new Color(0.62f, 0.83f, 1f, 1f); // icy blue
@@ -32,7 +32,6 @@ public class FreezeFXUI : MonoBehaviour
         float t = Mathf.Clamp01(vitals.Freeze01);
         float a = alphaByFreeze.Evaluate(t) * maxAlpha;
 
-        // keep original RGB from coldTint but drive Alpha
         Color c = coldTint;
         c.a = a;
         overlay.color = c;

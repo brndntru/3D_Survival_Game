@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HotbarSelection : MonoBehaviour
 {
-    public HotbarController controller;     // drag your HotbarControllerGO
-    public Inventory hotbar;                // auto-filled from controller if left empty
+    public HotbarController controller;     
+    public Inventory hotbar;               
     [Range(0, 7)] public int selectedIndex = 0;
     public bool wrapScroll = true;
 
@@ -17,7 +17,7 @@ public class HotbarSelection : MonoBehaviour
 
     void Update()
     {
-        // 1..8 number keys
+        // number keys
         if (Input.GetKeyDown(KeyCode.Alpha1)) Select(0);
         if (Input.GetKeyDown(KeyCode.Alpha2)) Select(1);
         if (Input.GetKeyDown(KeyCode.Alpha3)) Select(2);
@@ -27,7 +27,7 @@ public class HotbarSelection : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha7)) Select(6);
         if (Input.GetKeyDown(KeyCode.Alpha8)) Select(7);
 
-        // mouse wheel cycle (optional)
+        // mouse wheel cycle
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0f) Step(-1);
         if (scroll < 0f) Step(+1);

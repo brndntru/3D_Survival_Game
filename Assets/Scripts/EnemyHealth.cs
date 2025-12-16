@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject deathEffect;
 
-    // ---- NEW: for UI ----
+    // ui
     public System.Action onHealthChanged;
     public float Health01
     {
@@ -20,9 +20,8 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    // ---- NEW: damage indicator integration ----
     public DamageIndicator damageIndicatorPrefab;
-    public Transform indicatorAnchor;   // optional; can leave empty
+    public Transform indicatorAnchor;  
     public Vector3 indicatorOffset = new Vector3(0.3f, 0.5f, 0f);
 
     void Start()
@@ -41,12 +40,10 @@ public class EnemyHealth : MonoBehaviour
         // spawn indicator
         if (damageIndicatorPrefab != null)
         {
-            // Base position: anchor if set, otherwise enemy position
             Vector3 basePos = indicatorAnchor
                 ? indicatorAnchor.position
                 : transform.position;
 
-            // Treat indicatorOffset as a simple world-space offset
             Vector3 pos = basePos + indicatorOffset;
 
             var popup = Instantiate(damageIndicatorPrefab, pos, Quaternion.identity);
@@ -77,8 +74,8 @@ public class EnemyHealth : MonoBehaviour
         if (anim != null)
         {
             anim.SetTrigger("Die");
-            // wait for the death animation to play before removing the object
-            Destroy(gameObject, 2f); // adjust 2f to your death clip length
+            // waits for the death animation to play before removing object
+            Destroy(gameObject, 2f); 
         }
         else
         {

@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
 
     void Awake()
     {
-        // Grab references once
+        // grab references once
         anim = GetComponentInChildren<Animator>();
         player = GameObject.FindWithTag("Player")?.transform;
     }
@@ -30,7 +30,7 @@ public class EnemyAI : MonoBehaviour
         float dist = Vector3.Distance(transform.position, player.position);
         bool isMoving = false;
 
-        // ---- CHASE ----
+        // chase
         if (dist <= chaseRange && dist > stopDistance)
         {
             Vector3 dir = player.position - transform.position;
@@ -44,16 +44,16 @@ public class EnemyAI : MonoBehaviour
             isMoving = true;
         }
 
-        // ---- ATTACK ----
+        // attack
         if (dist <= stopDistance)
         {
             TryAttack();
         }
 
-        // ---- DRIVE ANIMATOR SPEED ----
+        // speed
         if (anim != null)
         {
-            anim.SetFloat("Speed", isMoving ? 1f : 0f); // 1 or 0 is enough
+            anim.SetFloat("Speed", isMoving ? 1f : 0f); 
         }
     }
 

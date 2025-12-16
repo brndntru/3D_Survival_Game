@@ -40,7 +40,7 @@ public class Inventory : MonoBehaviour
             }
         }
         OnInventoryChanged?.Invoke();
-        return false; // no space
+        return false; 
     }
     public int AddReturnLeftover(ItemData item, int amount)
     {
@@ -68,7 +68,7 @@ public class Inventory : MonoBehaviour
             }
         }
         OnInventoryChanged?.Invoke();
-        return amount; // 0 = all placed
+        return amount; 
     }
 
     public void ClearSlot(int index)

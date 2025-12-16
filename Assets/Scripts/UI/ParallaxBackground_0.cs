@@ -26,7 +26,7 @@ public class ParallaxBackground_0 : MonoBehaviour
     }
 
     void Update(){
-        //Moving camera
+        // moving camera
         if (Camera_Move){
         _camera.position += Vector3.right * Time.deltaTime * Camera_MoveSpeed;
         }

@@ -9,8 +9,8 @@ public class GameOverSceneManager : MonoBehaviour
     public Button mainMenuButton;
 
     [Header("Scene Names")]
-    public string gameSceneName = "Demo_Scene";      // Your game scene
-    public string mainMenuSceneName = "MainMenu";    // Your main menu scene
+    public string gameSceneName = "Demo_Scene";      
+    public string mainMenuSceneName = "MainMenu";  
 
     [Header("Audio")]
     public AudioClip buttonClickSound;
@@ -19,18 +19,18 @@ public class GameOverSceneManager : MonoBehaviour
 
     void Start()
     {
-        // Setup audio
+        // audio setup (if time to implement)
         audioSource = GetComponent<AudioSource>();
         if (!audioSource) audioSource = gameObject.AddComponent<AudioSource>();
 
-        // Show cursor
+        // shows cursor
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        // Make sure time is running
+        // ensures time is running
         Time.timeScale = 1f;
 
-        // Setup button listeners
+        // button listeners
         if (respawnButton) respawnButton.onClick.AddListener(OnRespawnClicked);
         if (mainMenuButton) mainMenuButton.onClick.AddListener(OnMainMenuClicked);
     }
@@ -38,22 +38,18 @@ public class GameOverSceneManager : MonoBehaviour
     public void OnRespawnClicked()
     {
         PlayClickSound();
-
-        // Reset time scale in case it was paused
         Time.timeScale = 1f;
 
-        // Load the game scene (this will reset everything)
+        // loads game scene
         SceneManager.LoadScene(gameSceneName);
     }
 
     public void OnMainMenuClicked()
     {
         PlayClickSound();
-
-        // Reset time scale
         Time.timeScale = 1f;
 
-        // Load main menu scene
+        // loads main menu scene
         SceneManager.LoadScene(mainMenuSceneName);
     }
 
