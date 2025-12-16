@@ -1,4 +1,3 @@
-// InventorySlotUI.cs
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
@@ -8,7 +7,8 @@ public class InventorySlotUI : MonoBehaviour
     public Image icon;
     public TMP_Text countText;
 
-    void Awake()  // start empty & transparent
+    // starts empty and transparent
+    void Awake()  
     {
         if (icon)
         {

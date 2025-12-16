@@ -4,16 +4,16 @@ using UnityEngine.UI;
 public class EnemyHealthBar : MonoBehaviour
 {
     [Header("References")]
-    public EnemyHealth enemy;         // auto-filled from parent if left empty
-    public Slider slider;             // slider on this canvas
-    public CanvasGroup canvasGroup;   // for show / hide
+    public EnemyHealth enemy;        
+    public Slider slider;             
+    public CanvasGroup canvasGroup;   
 
     [Header("Positioning")]
     public Vector3 worldOffset = new Vector3(0f, 2f, 0f);
 
     [Header("Visibility")]
-    public float showWhenBelow = 0.99f;       // only show if HP < 99%
-    public float visibleSecondsAfterHit = 2f; // how long to stay visible after damage
+    public float showWhenBelow = 0.99f;       
+    public float visibleSecondsAfterHit = 2f; 
 
     float hideTimer;
 
@@ -56,14 +56,14 @@ public class EnemyHealthBar : MonoBehaviour
         // follow enemy + offset
         transform.position = enemy.transform.position + worldOffset;
 
-        // face camera (billboard)
+        // face camera 
         if (Camera.main)
         {
             Vector3 camPos = Camera.main.transform.position;
             transform.rotation = Quaternion.LookRotation(transform.position - camPos);
         }
 
-        // handle visibility timer
+        // handles visibility timer
         if (canvasGroup)
         {
             if (hideTimer > 0f)
@@ -73,7 +73,6 @@ public class EnemyHealthBar : MonoBehaviour
             }
             else
             {
-                // hide if near full HP
                 canvasGroup.alpha = (enemy.Health01 < showWhenBelow) ? 1f : 0f;
             }
         }
@@ -82,7 +81,7 @@ public class EnemyHealthBar : MonoBehaviour
     void OnHealthChanged()
     {
         Refresh();
-        hideTimer = visibleSecondsAfterHit;   // stay visible after getting hit
+        hideTimer = visibleSecondsAfterHit;  
     }
 
     void Refresh()

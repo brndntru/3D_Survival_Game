@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HandController : MonoBehaviour
 {
-    public HotbarSelection selection;   // drag from Player
-    public Transform handSocket;        // child under Main Camera
+    public HotbarSelection selection;  
+    public Transform handSocket;    
 
     GameObject current;
     ItemData currentItem;
@@ -13,7 +13,6 @@ public class HandController : MonoBehaviour
         if (!selection) selection = FindObjectOfType<HotbarSelection>();
         if (!handSocket)
         {
-            // Try to auto-find a child named "HandSocket"
             var cam = Camera.main ? Camera.main.transform : null;
             if (cam) handSocket = cam.Find("HandSocket");
             if (!handSocket && cam)
@@ -50,14 +49,14 @@ public class HandController : MonoBehaviour
         var slot = selection.hotbar.slots[selection.selectedIndex];
         var nextItem = slot.item;
 
-        // If item type didn't change, keep current (you could refresh on count if you want)
+        // keeps current item if same item(not changed)
         if (nextItem == currentItem) return;
 
-        // clear current
+        // clears current
         if (current) Destroy(current);
         currentItem = nextItem;
 
-        // spawn new
+        // spawns new
         if (currentItem && currentItem.heldPrefab && handSocket)
         {
             current = Instantiate(currentItem.heldPrefab, handSocket);
@@ -68,10 +67,10 @@ public class HandController : MonoBehaviour
             if (currentItem.heldLocalScale == Vector3.zero) current.transform.localScale = Vector3.one;
             else current.transform.localScale = currentItem.heldLocalScale;
 
-            // Make sure held models don't collide with the player
+            //ensures held models don't collide with the player
             foreach (var c in current.GetComponentsInChildren<Collider>()) c.enabled = false;
             foreach (var rb in current.GetComponentsInChildren<Rigidbody>()) rb.isKinematic = true;
-            current.layer = LayerMask.NameToLayer("Ignore Raycast"); // optional
+            current.layer = LayerMask.NameToLayer("Ignore Raycast"); 
         }
     }
     public void Unequip()

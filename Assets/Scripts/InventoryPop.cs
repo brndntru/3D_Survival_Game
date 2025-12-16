@@ -4,8 +4,8 @@ using System.Collections;
 public class InventoryPop : MonoBehaviour
 {
     [Header("Targets")]
-    public RectTransform target;          // usually this RectTransform
-    public CanvasGroup canvasGroup;       // UI alpha & input
+    public RectTransform target;        
+    public CanvasGroup canvasGroup;       
 
     [Header("Timing")]
     public float openDuration = 0.18f;

@@ -8,7 +8,7 @@ public class PlayerVitals : MonoBehaviour
     public float health = 100f;
 
     [Header("Cold / Freeze")]
-    public float maxFreeze = 100f;     // 0 = fine, 100 = fully frozen
+    public float maxFreeze = 100f;     // 0 = warm, 100 = frozen
     public float freeze = 0f;
 
     [Tooltip("Constant cold per second everywhere. Set 0 to rely only on zones/weather.")]
@@ -20,22 +20,20 @@ public class PlayerVitals : MonoBehaviour
     [Tooltip("Max speed you can warm per second when in a warm zone (negative net cold).")]
     public float warmRecoveryLimitPerSec = 10f;
 
-    // -------- Optional safety (leave 0 unless needed) --------
     [Header("Safety (optional)")]
     [Tooltip("Seconds after spawn where freeze damage is ignored.")]
     public float spawnInvulnSeconds = 0f;
     [Tooltip("Must remain fully frozen this long before health starts ticking.")]
     public float freezeDamageDelay = 0f;
 
-    // -------- NEW: Game Over Settings --------
+    // game over settings
     [Header("Game Over")]
     [Tooltip("Scene to load when player dies.")]
     public string gameOverSceneName = "GameOver";
     [Tooltip("Delay in seconds before loading game over scene.")]
     public float deathDelay = 1f;
 
-    // Runtime
-    float coldRateBonus = 0f; // zones add to this (blizzard/water/wind) or campfire (negative)
+    float coldRateBonus = 0f; 
     public System.Action onVitalsChanged;
 
     public float Health01 => maxHealth <= 0 ? 0 : Mathf.Clamp01(health / maxHealth);
@@ -43,7 +41,7 @@ public class PlayerVitals : MonoBehaviour
 
     float spawnTimer;
     float fullFreezeTimer;
-    bool isDead = false; // NEW: Track death state
+    bool isDead = false; 
 
     void Start()
     {
@@ -57,12 +55,12 @@ public class PlayerVitals : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return; // NEW: Stop updating if dead
+        if (isDead) return; 
 
         float dt = Time.deltaTime;
         spawnTimer += dt;
 
-        // ----- Cold accumulation (+ freeze, - warm) -----
+        // cold accumulation
         float netCold = ambientColdPerSec + coldRateBonus;
         if (netCold >= 0f)
             freeze += netCold * dt;
@@ -71,11 +69,10 @@ public class PlayerVitals : MonoBehaviour
 
         freeze = Mathf.Clamp(freeze, 0f, maxFreeze);
 
-        // Track time spent fully frozen
         if (freeze >= maxFreeze) fullFreezeTimer += dt;
         else fullFreezeTimer = 0f;
 
-        // ----- Health damage while fully frozen -----
+        // health damage
         if (freeze >= maxFreeze &&
             spawnTimer >= spawnInvulnSeconds &&
             fullFreezeTimer >= freezeDamageDelay &&
@@ -84,7 +81,6 @@ public class PlayerVitals : MonoBehaviour
             health = Mathf.Clamp(health - damagePerSecWhenFrozen * dt, 0f, maxHealth);
         }
 
-        // NEW: Check for death
         if (health <= 0 && !isDead)
         {
             Die();
@@ -93,12 +89,11 @@ public class PlayerVitals : MonoBehaviour
         onVitalsChanged?.Invoke();
     }
 
-    // NEW: Handle player death
     void Die()
     {
         isDead = true;
 
-        // Disable player controls
+        // disables player controls
         var movementController = GetComponent<MovementController>();
         if (movementController) movementController.enabled = false;
 
@@ -108,7 +103,7 @@ public class PlayerVitals : MonoBehaviour
         var playerPickup = GetComponent<PlayerPickup>();
         if (playerPickup) playerPickup.enabled = false;
 
-        // Load game over scene after delay
+        // loads game over scene
         Invoke(nameof(LoadGameOverScene), deathDelay);
     }
 
@@ -117,10 +112,9 @@ public class PlayerVitals : MonoBehaviour
         SceneManager.LoadScene(gameOverSceneName);
     }
 
-    // ---------------- Public API ----------------
     public void TakeDamage(float amount)
     {
-        if (isDead) return; // NEW: Can't take damage if dead
+        if (isDead) return; 
         amount = Mathf.Abs(amount);
         health = Mathf.Clamp(health - amount, 0f, maxHealth);
         onVitalsChanged?.Invoke();
@@ -132,7 +126,6 @@ public class PlayerVitals : MonoBehaviour
         onVitalsChanged?.Invoke();
     }
 
-    /// <summary>Zones call this (positive = colder, negative = warmer).</summary>
     public void AddColdRate(float deltaPerSec)
     {
         coldRateBonus += deltaPerSec;

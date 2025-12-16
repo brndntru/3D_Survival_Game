@@ -4,8 +4,8 @@ using System.Collections;
 public class Weapon : MonoBehaviour
 {
     [Header("References")]
-    public Camera cam;                 // Assign Main Camera
-    public Animator animator;          // Optional swing animation
+    public Camera cam;                 
+    public Animator animator;         
 
     [Header("Attack Settings")]
     public float damage = 25f;
@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
     public float hitDelay = 0.1f;
 
     [Header("Input")]
-    public int mouseButton = 0;        // Left click
+    public int mouseButton = 0;      
     public bool inputBuffering = true;
 
     float lastAttackTime = -999f;
@@ -52,7 +52,7 @@ public class Weapon : MonoBehaviour
             animator.SetTrigger("Attack");
         }
 
-        // wait for animation to reach swing point
+        // waits for animation to reach swing point
         yield return new WaitForSeconds(hitDelay);
 
         PerformHit();

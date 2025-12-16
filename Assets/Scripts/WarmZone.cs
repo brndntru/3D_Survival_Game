@@ -7,7 +7,7 @@ public class WarmZone : MonoBehaviour
     public float warmthRate = 12f;
 
     [Header("Visual (Editor Only)")]
-    public Color gizmoColor = new Color(1f, 0.5f, 0f, 0.3f); // Orange
+    public Color gizmoColor = new Color(1f, 0.5f, 0f, 0.3f); 
     public bool showGizmo = true;
 
     private Collider triggerCollider;
@@ -47,7 +47,6 @@ public class WarmZone : MonoBehaviour
         }
     }
 
-    // Draw the warm zone in the Scene view
     void OnDrawGizmos()
     {
         if (!showGizmo) return;
@@ -70,12 +69,10 @@ public class WarmZone : MonoBehaviour
         }
         else if (col is CapsuleCollider capsule)
         {
-            // Simple sphere approximation for capsule
             Gizmos.DrawSphere(transform.position + capsule.center, capsule.radius * transform.localScale.x);
         }
     }
 
-    // Draw when selected (more visible)
     void OnDrawGizmosSelected()
     {
         if (!showGizmo) return;
@@ -83,7 +80,7 @@ public class WarmZone : MonoBehaviour
         Collider col = GetComponent<Collider>();
         if (col == null) return;
 
-        Gizmos.color = new Color(1f, 0.5f, 0f, 0.6f); // Brighter orange when selected
+        Gizmos.color = new Color(1f, 0.5f, 0f, 0.6f);
 
         if (col is SphereCollider sphere)
         {

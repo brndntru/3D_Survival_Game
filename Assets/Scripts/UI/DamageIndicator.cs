@@ -38,10 +38,10 @@ public class DamageIndicator : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-        // float upwards in world space
+        // floats upwards in world space
         transform.position += Vector3.up * moveUpSpeed * Time.deltaTime;
 
-        // fade out
+        // fades out
         if (canvasGroup)
         {
             float t = Mathf.Clamp01(timer / lifetime);

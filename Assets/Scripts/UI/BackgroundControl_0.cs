@@ -28,9 +28,9 @@ public class BackgroundControl_0 : MonoBehaviour
         Layer_Object[0].GetComponent<SpriteRenderer>().sprite = Layer_Sprites[backgroundNum*5];
         for (int i = 1; i < Layer_Object.Length; i++){
             Sprite changeSprite = Layer_Sprites[backgroundNum*5 + i];
-            //Change Layer_1->7
+            // change Layer_1->7
             Layer_Object[i].GetComponent<SpriteRenderer>().sprite = changeSprite;
-            //Change "Layer_(*)x" sprites in children of Layer_1->7
+            // change "Layer_(*)x" sprites in children of Layer_1->7
             Layer_Object[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = changeSprite;
             Layer_Object[i].transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = changeSprite;
         }

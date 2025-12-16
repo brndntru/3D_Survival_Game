@@ -3,9 +3,9 @@ using UnityEngine.EventSystems;
 
 public class SlotClick : MonoBehaviour, IPointerClickHandler
 {
-    public Inventory inventory;   // assigned by UI builder
+    public Inventory inventory;  
     public int index;
-    public HotbarController controller; // assigned by UI builder
+    public HotbarController controller;
 
     public void Init(Inventory inv, int idx, HotbarController ctl)
     { inventory = inv; index = idx; controller = ctl; }

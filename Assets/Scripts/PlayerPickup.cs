@@ -4,16 +4,16 @@ using UnityEngine.UI;
 public class PlayerPickup : MonoBehaviour
 {
     [Header("Refs")]
-    public Camera cam;                   // drag Main Camera
-    public Inventory inventory;          // Player's main Inventory
-    public HotbarController controller;  // drag your HotbarControllerGO (or leave null to auto-find)
-    public Text promptText;              // optional UI prompt
+    public Camera cam;                 
+    public Inventory inventory;         
+    public HotbarController controller; 
+    public Text promptText;              
 
     [Header("Pickup")]
     public KeyCode pickupKey = KeyCode.F;
     public float range = 3f;
-    public float aimRadius = 0.4f;       // 0.3–0.6 is forgiving
-    public LayerMask pickupMask;         // optional: set to "Pickup" layer
+    public float aimRadius = 0.4f;      
+    public LayerMask pickupMask;
 
     RaycastHit[] hits = new RaycastHit[8];
 
@@ -21,7 +21,7 @@ public class PlayerPickup : MonoBehaviour
     {
         if (!cam) cam = Camera.main;
         if (!inventory) inventory = GetComponent<Inventory>();
-        if (!controller) controller = FindObjectOfType<HotbarController>(); // auto-find if not wired
+        if (!controller) controller = FindObjectOfType<HotbarController>(); 
         if (promptText) promptText.text = "";
     }
 
@@ -34,7 +34,6 @@ public class PlayerPickup : MonoBehaviour
 
         if (target && Input.GetKeyDown(pickupKey))
         {
-            // STEP 5: Try hotbar first, leftover to main inventory
             if (controller)
             {
                 controller.AddPreferHotbar(target.item, target.amount);
@@ -42,7 +41,6 @@ public class PlayerPickup : MonoBehaviour
             }
             else
             {
-                // Fallback if controller missing
                 if (inventory && inventory.Add(target.item, target.amount))
                     Destroy(target.gameObject);
             }
@@ -66,7 +64,6 @@ public class PlayerPickup : MonoBehaviour
         }
         if (best) return best;
 
-        // small proximity fallback near crosshair
         var center = cam.transform.position + cam.transform.forward * 1.2f;
         var cols = Physics.OverlapSphere(center, 1.5f, mask, QueryTriggerInteraction.Collide);
         float bestScore = 999f;

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 public class InventoryUI : MonoBehaviour
 {
-    public Inventory inventory;         // which container this UI shows
-    public GameObject panelRoot;        // panel to show/hide (optional)
-    public Transform gridParent;        // Grid holder
-    public GameObject slotPrefab;       // SlotUI prefab
-    public HotbarController controller; // to move on click
+    public Inventory inventory;       
+    public GameObject panelRoot;       
+    public Transform gridParent;        
+    public GameObject slotPrefab;      
+    public HotbarController controller; 
     public bool startHidden = false;
-    public KeyCode toggleKey = KeyCode.None; // set Tab for main inv, None for hotbar
+    public KeyCode toggleKey = KeyCode.None; 
     public InventoryPop pop;
 
     readonly List<InventorySlotUI> slotUIs = new();
@@ -18,9 +18,9 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         if (panelRoot)
-        {               // keep object active; animator handles visibility
+        {             
             if (!pop) pop = panelRoot.GetComponent<InventoryPop>();
-            if (pop) pop.SetClosedImmediate();   // start CLOSED
+            if (pop) pop.SetClosedImmediate();   
         }
         Build();
         if (inventory) inventory.OnInventoryChanged += Refresh;
@@ -40,7 +40,6 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                // fallback if no pop component
                 willOpen = !panelRoot.activeSelf;
                 panelRoot.SetActive(willOpen);
             }
@@ -68,7 +67,7 @@ public class InventoryUI : MonoBehaviour
             var go = Instantiate(slotPrefab, gridParent);
             slotUIs.Add(go.GetComponent<InventorySlotUI>());
             var click = go.GetComponent<SlotClick>();
-            if (click != null) click.Init(inventory, i, controller);  // <-- binds click
+            if (click != null) click.Init(inventory, i, controller); 
         }
         built = true;
     }
