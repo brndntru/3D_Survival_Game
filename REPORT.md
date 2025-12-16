@@ -1,0 +1,4 @@
+## Challenges/Fixes
+- It was difficult to create high-quality terrain and meshes on our own, so we largely imported free assets from the Unity Store and other sources
+- Our initial pitch was overly ambitious, so we focused on implementing the core features (i.e. hypothermia, combat)
+- Creating the snowy ambience required the addition of particle effects, dark lighting, and UI features such as the icy vignette
