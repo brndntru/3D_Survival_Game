@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerVitals : MonoBehaviour
 {
@@ -26,6 +27,13 @@ public class PlayerVitals : MonoBehaviour
     [Tooltip("Must remain fully frozen this long before health starts ticking.")]
     public float freezeDamageDelay = 0f;
 
+    // -------- NEW: Game Over Settings --------
+    [Header("Game Over")]
+    [Tooltip("Scene to load when player dies.")]
+    public string gameOverSceneName = "GameOver";
+    [Tooltip("Delay in seconds before loading game over scene.")]
+    public float deathDelay = 1f;
+
     // Runtime
     float coldRateBonus = 0f; // zones add to this (blizzard/water/wind) or campfire (negative)
     public System.Action onVitalsChanged;
@@ -35,11 +43,13 @@ public class PlayerVitals : MonoBehaviour
 
     float spawnTimer;
     float fullFreezeTimer;
+    bool isDead = false; // NEW: Track death state
 
     void Start()
     {
         spawnTimer = 0f;
         fullFreezeTimer = 0f;
+        isDead = false;
         health = Mathf.Clamp(health, 0f, maxHealth);
         freeze = Mathf.Clamp(freeze, 0f, maxFreeze);
         onVitalsChanged?.Invoke();
@@ -47,6 +57,8 @@ public class PlayerVitals : MonoBehaviour
 
     void Update()
     {
+        if (isDead) return; // NEW: Stop updating if dead
+
         float dt = Time.deltaTime;
         spawnTimer += dt;
 
@@ -72,12 +84,43 @@ public class PlayerVitals : MonoBehaviour
             health = Mathf.Clamp(health - damagePerSecWhenFrozen * dt, 0f, maxHealth);
         }
 
+        // NEW: Check for death
+        if (health <= 0 && !isDead)
+        {
+            Die();
+        }
+
         onVitalsChanged?.Invoke();
+    }
+
+    // NEW: Handle player death
+    void Die()
+    {
+        isDead = true;
+
+        // Disable player controls
+        var movementController = GetComponent<MovementController>();
+        if (movementController) movementController.enabled = false;
+
+        var firstPersonLook = FindObjectOfType<FirstPersonLook>();
+        if (firstPersonLook) firstPersonLook.enabled = false;
+
+        var playerPickup = GetComponent<PlayerPickup>();
+        if (playerPickup) playerPickup.enabled = false;
+
+        // Load game over scene after delay
+        Invoke(nameof(LoadGameOverScene), deathDelay);
+    }
+
+    void LoadGameOverScene()
+    {
+        SceneManager.LoadScene(gameOverSceneName);
     }
 
     // ---------------- Public API ----------------
     public void TakeDamage(float amount)
     {
+        if (isDead) return; // NEW: Can't take damage if dead
         amount = Mathf.Abs(amount);
         health = Mathf.Clamp(health - amount, 0f, maxHealth);
         onVitalsChanged?.Invoke();
